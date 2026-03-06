@@ -1,0 +1,201 @@
+.outer-container{
+    background-color: #FFCC00;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+.inner-container{
+    border: 10px black solid;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #F8F0E3;
+    height: 93%;
+}
+
+.top-headers{
+    color: black;
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
+    padding: 40px;
+    margin-right: 20px;
+    align-items: center;
+    position: relative
+}
+
+.heart-icons{
+    position: absolute;
+    left: 50px;
+    border-radius: 5px;
+}
+
+.join-tab{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.join-tab:hover{
+    transform: scale(1.05);  
+    box-shadow: 0px 12px 24px rgba(0,0,0,0.25);
+
+  }
+
+.welcome-box{
+    text-align: left;
+    background-color: #0080fe;
+    margin: 0px 30px;
+    height: 50%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+
+}
+
+.welcome-text-box{
+    margin-left: 50px;
+    font-family: system-ui;
+    max-width: 500px;
+    position: relative;
+}
+
+.welcome-text{
+    font-size: 50px;
+    width: 400px;
+    line-height: 1;
+
+}
+
+.welcome-image{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.image-container{
+    height: 380px;
+    background-color: white;
+    width: 900px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.welcome-description{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.tab{
+    background-color: inherit !important;
+    color: black !important;
+    border: none !important;
+}
+
+.tab:hover{
+    transform: scale(1.25);  
+    border: none !important
+  }
+
+.sparkle{
+    position: absolute;
+}
+.one{
+    right: 510px;
+    bottom: 2px;
+    animation: flicker 1s infinite;
+}
+.two{
+    bottom: 40px;
+    animation: flicker2 1s infinite;
+}
+
+  @keyframes flicker{
+    0% { opacity: 1; }
+    50% { opacity: 0.25; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes flicker2{
+    0% { opacity: 0.25; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+
+.bottom-tabs{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.bottom-tab{
+  width: 23%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    position: relative;
+    font-family: sans-serif;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
+
+}
+
+.bottom-tab:hover{
+    transform: scale(1.05);  
+    box-shadow: 0px 12px 24px rgba(0,0,0,0.25);
+
+  }
+
+.tab-text{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    display: flex;
+    min-width: 200px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+
+.tab-description{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: flex-end;
+}
+
+
+.tab-image{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    top: 10px;
+    right: 70px;
+}
+
+.get-started-button{
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
+
+}
+.get-started-button:hover{
+    transform: scale(1.05);  
+    box-shadow: 0px 12px 24px rgba(0,0,0,0.25);
+
+  }
+
+  button:hover{
+    cursor: url('../../assets/sparkle_wand.png'), auto;
+
+  }
